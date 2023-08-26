@@ -6,6 +6,7 @@ namespace Quarterly.Test
     [TestFixture]
     internal class GetTotalDaysInQuarterTests
     {
+
         [TestCase("2023-01-01")]
         [Test]
         public void Quarters_With_90_Days(DateTime dt)

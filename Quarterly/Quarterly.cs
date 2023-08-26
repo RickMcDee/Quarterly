@@ -56,5 +56,16 @@
         {
             return dateTime.GetTotalDaysInQuarter();
         }
+
+        public static int GetRemainingDaysInQuarter(this DateTime dateTime)
+        {
+            var quarterEnd = dateTime.GetQuarterEnd();
+            return (quarterEnd.DayOfYear - dateTime.DayOfYear) + 1;
+        }
+
+        public static int GetRemainingDaysInQuarterFromDateTime(DateTime dateTime)
+        {
+            return dateTime.GetRemainingDaysInQuarter();
+        }
     }
 }

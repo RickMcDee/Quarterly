@@ -24,3 +24,15 @@ var currentQuarter = Quarterly.GetQuarterFromDateTime(DateTime.Now);
 | GetQuarterEndFromDateTime | Returns the enddate of the provided quarter | DateTime | DateTime |
 | GetDayInQuarter | Returns number of the provided day in the provided quarter | - | int |
 | GetDayInQuarterFromDateTime | Returns number of the provided day in the provided quarter | DateTime | int |
+| GetTotalDaysInQuarter | Returns the total number of days in the provided quarter | - | int |
+| GetTotalDaysInQuarterFromDateTime | Returns the total number of days in the provided quarter | DateTime | int |
+| GetRemainingDaysInQuarter | Returns the number of remaining days in the provided quarter | - | int |
+| GetRemainingDaysInQuarterFromDateTime | Returns the number of remaining days in the provided quarter | DateTime | int |
+
+## Changelog
+### 1.0.0
+- Initial Release
+
+### 1.1.0
+- Added "GetTotalDaysInQuarter"
+- Added "GetRemainingDaysInQuarter"
